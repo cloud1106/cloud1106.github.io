@@ -445,6 +445,7 @@
 物理层的主要作用就是把光信号转化为电信号。
 
 数据链路层
+主要为了给你传输的数据包加上mac地址
 
 网络层
 
@@ -463,7 +464,7 @@
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/03/25">
+                <div class="abstract-date" title="Last updated: 2024/03/26">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/03/25</span>
                 </div>
                 <!-- tags -->
@@ -486,16 +487,18 @@
             <div class="abstract-content">
                 
 关于mac地址
-  多个主机需要通过集线器的的方式来进行交互，当1号主机需要传送信息到5号主机时，要将自己的源mac地址和5号机器的mac地址发送给集线器，然后集线器通过广播的方式将5号机器的mac地址进行比对，（广播是所有主机都会接受到发送的，但发现mac地址和自己的不匹配就会将地址抛去，知道广播到需要接受的主机）当5号机器需要回复时，集线器就会带着源mac地址再次广播。
+  ​	mac地址为16进制的数字，是每一台网络设备的身份证，是独一无二的，共由12位16进制的数字组成，前6位为生产厂商，后六位为流水线号。
+  
+  ​	多个主机需要通过集线器的的方式来进行交互，当1号主机需要传送信息到5号主机时，要将自己的源mac地址和5号机器的mac地址发送给集线器，然后集线器通过广播的方式将5号机器的mac地址进行比对，（广播是所有主机都会接受到发送的，但发现mac地址和自己的不匹配就会将地址抛去，知道广播到需要接受的主机）当5号机器需要回复时，集线器就会带着源mac地址再次广播。
 
 关于IP简述
-  当主机数量过多时，mac地址无法隔绝广播域，所以产生了IP地址来分割广播域，集线器就显得力不从心了，也容易产生广播风暴，所以集线器升级成为了交换机，那么交换机就带有DHCP协议，意思就是当你有主...
+  当主机数量过多时，mac地址无法隔绝广播...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/03/25">
+                <div class="abstract-date" title="Last updated: 2024/03/26">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/03/19</span>
                 </div>
                 <!-- tags -->
@@ -533,7 +536,7 @@
             
                 <span class="iconfont-archer wechat" title=wechat>
                     
-                    <img class="profile-qr" src="/Desktop/fan.jpg" />
+                    <img class="profile-qr" src="/assets/example_qr.png" />
                 </span>
             
         
