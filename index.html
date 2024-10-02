@@ -444,16 +444,41 @@
             
         
         <article class="index-post">
-            <a class="abstract-title" href="/2024/05/11/%E6%95%B0%E6%8D%AE%E5%B0%81%E8%A3%85%E8%A7%A3%E5%B0%81%E8%A3%85/">
+            <a class="abstract-title" href="/2024/10/02/IP%E5%9C%B0%E5%9D%80%E5%88%92%E5%88%86/ip%E5%9C%B0%E5%9D%80%E5%88%92%E5%88%86/">
                 
-                <span class="abstract-title-text">数据封装解封装</span>
+                <span class="abstract-title-text">[Untitled Post]</span>
             </a>
             <div class="abstract-content">
-                类似与收发快递，通过wireshark抓包可观察到
-:![](数据封装解封装./屏幕截图 2024-10-02 152106-1727854075648.png)
-123
-![](数据封装解封装./屏幕截图 2024-10-02 152106-1727854106418.png)
-465
+                
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2024/10/02">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/10/02</span>
+                </div>
+                <!-- tags -->
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2024/10/02/IP%E5%9C%B0%E5%9D%80%E5%88%92%E5%88%86/">
+                
+                <span class="abstract-title-text">[Untitled Post]</span>
+            </a>
+            <div class="abstract-content">
+                
+title:IP地址划分
+
 
             </div>
             <!-- read more -->
@@ -461,7 +486,38 @@
             <div class="abstract-post-meta">
                 <!-- date -->
                 <div class="abstract-date" title="Last updated: 2024/10/02">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/05/11</span>
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/10/02</span>
+                </div>
+                <!-- tags -->
+                
+            </div>
+        </article>
+        <div class="index-post-divider"></div>
+    
+        
+        
+        
+        
+            
+        
+        <article class="index-post">
+            <a class="abstract-title" href="/2024/10/02/%E6%95%B0%E6%8D%AE%E5%B0%81%E8%A3%85%E8%A7%A3%E5%B0%81%E8%A3%85/">
+                
+                <span class="abstract-title-text">数据封装解封装</span>
+            </a>
+            <div class="abstract-content">
+                
+
+数据的封装解封装类似于收发快递  通过Wireshark抓包 可观察出此过程
+从下往上看为 HTTP，TCP，IPV4
+
+            </div>
+            <!-- read more -->
+            
+            <div class="abstract-post-meta">
+                <!-- date -->
+                <div class="abstract-date" title="Last updated: 2024/10/02">
+                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/10/02</span>
                 </div>
                 <!-- tags -->
                 
@@ -483,21 +539,14 @@
             <div class="abstract-content">
                 ​	osi七层模型可理解为国际组织为了收发信息的准确从而制定的一种框架，每一层都要加工很多协议，每次收发信息数据都要经过这个框架。
 
+
 osi包括 ：
-
-
-物理层
-​	物理层的主要作用就是把光信号转化为电信号。
-
+物理层​	物理层的主要作用就是把光信号转化为电信号。
 
 数据链路层
-
-
 物理层转换为电信号后是一串没有意义的二进制数字，而数据链路层就规定出电信号多少位一组且每组的意义。
 
-
 一组的电信号组成一个数据包，叫“帧”。
-
 
 而每一组的帧分为 head  和 data。
 
@@ -511,14 +560,16 @@ head：包含发送者的mac地址（6字节）接受者的mac 地址（没有�
 
 
 
+data：包含发送的数据 字节最短46 最大1500
 
-data：包含发送的数据 字节最短46 最...
+
+...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/11">
+                <div class="abstract-date" title="Last updated: 2024/10/02">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/03/25</span>
                 </div>
                 <!-- tags -->
@@ -540,21 +591,20 @@ data：包含发送的数据 字节最短46 最...
             </a>
             <div class="abstract-content">
                 
-
 关于mac地址
-​	mac地址为16进制的数字，是每一台网络设备的身份证，是独一无二的，共由12位16进制的数字组成，前6位为生产厂商，后六位为流水线号。
+  ​	mac地址为16进制的数字，是每一台网络设备的身份证，是独一无二的，共由12位16进制的数字组成，前6位为生产厂商，后六位为流水线号。
   
-​	多个主机需要通过集线器的的方式来进行交互，当1号主机需要传送信息到5号主机时，要将自己的源mac地址和5号机器的mac地址发送给集线器，然后集线器通过广播的方式将5号机器的mac地址进行比对，（广播是所有主机都会接受到发送的，但发现mac地址和自己的不匹配就会将地址抛去，知道广播到需要接受的主机）当5号机器需要回复时，集线器就会带着源mac地址再次广播。
 
+  ​	多个主机需要通过集线器的的方式来进行交互，当1号主机需要传送信息到5号主机时，要将自己的源mac地址和5号机器的mac地址发送给集线器，然后集线器通过广播的方式将5号机器的mac地址进行比对，（广播是所有主机都会接受到发送的，但发现mac地址和自己的不匹配就会将地址抛去，知道广播到需要接受的主机）当5号机器需要回复时，集线器就会带着源mac地址再次广播。
 
 关于IP简述
-当主机数量过多时，mac地址无法隔绝广播域，所以...
+  当主机数量过多时，mac地址无法隔绝广...
             </div>
             <!-- read more -->
             
             <div class="abstract-post-meta">
                 <!-- date -->
-                <div class="abstract-date" title="Last updated: 2024/05/11">
+                <div class="abstract-date" title="Last updated: 2024/10/02">
                     <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2024/03/19</span>
                 </div>
                 <!-- tags -->
@@ -766,7 +816,23 @@ data：包含发送的数据 字节最短46 最...
         
         
         
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
     
+        
+        
+        
+        
+        
+        
         
         
         
@@ -779,7 +845,7 @@ data：包含发送的数据 字节最短46 最...
     
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 3
+        Total : 5
         </div>
         <!-- search  -->
         
@@ -795,14 +861,44 @@ data：包含发送的数据 字节最短46 最...
             
         
         <li class="archive-post-item">
-            <span class="archive-post-date">05/11</span>
-            <a class="archive-post-title" href="/2024/05/11/%E6%95%B0%E6%8D%AE%E5%B0%81%E8%A3%85%E8%A7%A3%E5%B0%81%E8%A3%85/">数据封装解封装</a>
+            <span class="archive-post-date">10/02</span>
+            <a class="archive-post-title" href="/2024/10/02/IP%E5%9C%B0%E5%9D%80%E5%88%92%E5%88%86/">[Untitled Post]</a>
         </li>
     
         
         <li class="archive-post-item">
             <span class="archive-post-date">03/25</span>
             <a class="archive-post-title" href="/2024/03/25/osi/">OSI七层模型</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> Invalid date </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span>
+            <a class="archive-post-title" href="/2024/10/02/%E6%95%B0%E6%8D%AE%E5%B0%81%E8%A3%85%E8%A7%A3%E5%B0%81%E8%A3%85/">数据封装解封装</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2024 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/02</span>
+            <a class="archive-post-title" href="/2024/10/02/IP%E5%9C%B0%E5%9D%80%E5%88%92%E5%88%86/ip%E5%9C%B0%E5%9D%80%E5%88%92%E5%88%86/">[Untitled Post]</a>
         </li>
     
         
